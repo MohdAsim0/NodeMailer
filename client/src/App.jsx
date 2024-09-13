@@ -47,7 +47,7 @@ function App() {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:6969/sendEmail", {
+      const response = await axios.post("https://nodemailer-vz0u.onrender.com/sendEmail", {
         name: currentName, // Use the stored values
         email: currentEmail, // Use the stored values
         message: currentMessage, // Use the stored values
